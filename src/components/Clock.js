@@ -5,7 +5,7 @@ class Clock extends React.Component {
         super(props);
         this.state = {
             time: new Date().toLocaleTimeString()
-        }
+        };
     }
 
     componentDidMount() {
@@ -14,6 +14,7 @@ class Clock extends React.Component {
             1000
         );
     }
+    
     componentWillUnmount() {
         clearInterval(this.intervalID);
     }
@@ -24,10 +25,9 @@ class Clock extends React.Component {
         this.setState({ time: time });
     }
 
-
     render() {
         return (
-            <h1>The time is: {this.state.time}</h1>
+            <h1 style={{width:'30%', margin:'0 auto'}}>The time is: {this.state.time}</h1>
         );
     }
 }
