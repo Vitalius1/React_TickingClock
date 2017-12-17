@@ -27,7 +27,7 @@ class Clock extends React.Component {
 
     render() {
         return (
-            <h1 style={{width:'30%', margin:'0 auto'}}>The time is: {this.state.time}</h1>
+            <h1 style={{width:'30%', margin:'10% auto'}}>The time is: {this.state.time}</h1>
         );
     }
 }
